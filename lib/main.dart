@@ -50,7 +50,13 @@ class _QuizPageState extends State<QuizPage> {
     });
   }
 
-// Enables reviews to be re-winded
+// Restart Quiz
+  void restart(){
+    // runApp(Quiz());
+    //TODO : Implement method to restart application
+  }
+
+// Enables reviews to be redone
   void rewind(){
     quizBrain.reviewReset();
     _pushReview();
@@ -64,7 +70,7 @@ class _QuizPageState extends State<QuizPage> {
           title: Text('Completed!'),
           content: Text('You are done reviewing'),
           actions: [
-            TextButton(onPressed: null , child: Text('Retry')),
+            TextButton(onPressed: restart , child: Text('Retry')),
             TextButton(onPressed: null , child: Text('Main Menu')),
             TextButton(onPressed: rewind , child: Text('Review Again')),
           ],
@@ -101,7 +107,7 @@ class _QuizPageState extends State<QuizPage> {
           title: Text('Completed!'),
           content: Text('You are done with this quiz. You scored ${score_str}/${total}'),
           actions: [
-            TextButton(onPressed: null , child: Text('Retry')),
+            TextButton(onPressed: restart , child: Text('Retry')),
             TextButton(onPressed: null , child: Text('Main Menu')),
             TextButton(onPressed: _pushReview , child: Text('Review')),
           ],
