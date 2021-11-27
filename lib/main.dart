@@ -36,6 +36,7 @@ class _QuizPageState extends State<QuizPage> {
   List<Icon> scoreKeeper = [];
   bool _isLoading = true;
 
+
   @override
   void initState(){
     super.initState();
@@ -49,7 +50,41 @@ class _QuizPageState extends State<QuizPage> {
     });
   }
 
+// Enables reviews to be re-winded
+  void rewind(){
+    quizBrain.reviewReset();
+    _pushReview();
+  }
 
+// Checks reviews left in array
+  void reviewCheck(){
+    setState(() {
+      if (quizBrain.isFinishedReview() == true){
+        AlertDialog alert = AlertDialog(
+          title: Text('Completed!'),
+          content: Text('You are done reviewing'),
+          actions: [
+            TextButton(onPressed: null , child: Text('Retry')),
+            TextButton(onPressed: null , child: Text('Main Menu')),
+            TextButton(onPressed: rewind , child: Text('Review Again')),
+          ],
+        );
+
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return alert;
+          },
+        );
+      }
+      else{
+        quizBrain.nextReviewQuestion();
+        _pushReview();
+      }
+    });
+  }
+
+// Checks user answer against a given JSON answer
   void checkAnswer(bool userPickedAnswer) {
     bool correctAnswer = quizBrain.getCorrectAnswer();
 
@@ -68,7 +103,7 @@ class _QuizPageState extends State<QuizPage> {
           actions: [
             TextButton(onPressed: null , child: Text('Retry')),
             TextButton(onPressed: null , child: Text('Main Menu')),
-            TextButton(onPressed: null , child: Text('Review')),
+            TextButton(onPressed: _pushReview , child: Text('Review')),
           ],
         );
 
@@ -95,6 +130,7 @@ class _QuizPageState extends State<QuizPage> {
             color: Colors.green,
           ));
         } else {
+          quizBrain.addReview();
           scoreKeeper.add(Icon(
             Icons.close,
             color: Colors.red,
@@ -104,6 +140,77 @@ class _QuizPageState extends State<QuizPage> {
       }
     });
   }
+
+
+
+// Review Screen
+ void _pushReview() {
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (BuildContext context) {
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+        Expanded(
+        flex: 5,
+        child: Padding(
+          padding: EdgeInsets.all(5.0),
+          child: Center(
+            child: Text(
+              quizBrain.getReviewQuestionText(),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 25.0,
+                color: Colors.black,
+              ),
+            ),
+          ),
+        ),
+      ),
+      Expanded(
+            flex: 5,
+            child: Padding(
+              padding: EdgeInsets.all(5.0),
+              child: Center(
+                child: Text(
+                  quizBrain.getReviewQuestionExplanation()!,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25.0,
+                    color: Colors.red,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(15.0),
+              child: TextButton(
+                style: TextButton.styleFrom(backgroundColor: Colors.green),
+                child: Text(
+                  'Next',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20.0,
+                  ),
+                ),
+                onPressed: () {
+                  //Next Question
+                  reviewCheck();
+                },
+              ),
+            ),
+          ),
+      ],
+      ),
+    );
+  })
+  );
+}
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -132,7 +239,7 @@ class _QuizPageState extends State<QuizPage> {
             child: Padding(
               padding: EdgeInsets.all(15.0),
               child: TextButton(
-                style: TextButton.styleFrom(backgroundColor: Colors.green, ),
+                style: TextButton.styleFrom(backgroundColor: Colors.green),
                 child: Text(
                   'True',
                   style: TextStyle(
