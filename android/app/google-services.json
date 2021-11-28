@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "529880251407",
+    "project_id": "tukwan-app-fc81c",
+    "storage_bucket": "tukwan-app-fc81c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529880251407:android:b513abc73460dc6e35b77a",
+        "android_client_info": {
+          "package_name": "com.example.tukwan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529880251407-4n2ffrt55pqut1o3056eufh65nhc8q10.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvcRZ0Nm3DWeV-tUk-lsEINO1l7qSyV0k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529880251407-4n2ffrt55pqut1o3056eufh65nhc8q10.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "529880251407-r78tpnou4cgpibj0nd982bh9smmv8jhi.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tukwan"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

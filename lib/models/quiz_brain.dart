@@ -134,9 +134,6 @@ class QuizBrain {
      return Question.questionsFromSnapshot(_questionList);
   }
 
-  Future<void> getQuestionFinal() async {
-    questionBank = await getQuestions();
-  }
 
 
 
