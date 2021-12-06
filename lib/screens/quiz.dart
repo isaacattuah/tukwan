@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import '../models/quiz_brain.dart';
+import 'courses_info.dart';
 
 QuizBrain quizBrain = QuizBrain();
 
-//void main() => runApp(Quiz());
+
+
 
 
 class Quiz extends StatelessWidget {
@@ -43,8 +45,20 @@ class _QuizPageState extends State<QuizPage> {
     getQuestionFinal();
   }
 
+
+
   Future<void> getQuestionFinal() async {
-    quizBrain.questionBank = await quizBrain.getQuestions('nsmq');
+
+    String subject = 'nsmq';
+    if (CourseInfoPage.subject == "Mathematics"){
+      subject = 'math';
+    }
+    else if (CourseInfoPage.subject == "Science"){
+      subject = 'science';
+    }
+
+
+    quizBrain.questionBank = await quizBrain.getQuestions(subject);
     setState(() {
       _isLoading = false;
     });
@@ -116,7 +130,7 @@ class _QuizPageState extends State<QuizPage> {
           title: Text('Completed!'),
           content: Text('You are done with this quiz. You scored ${score_str}/${total}'),
           actions: [
-            TextButton(onPressed: restart , child: Text('Retry')),
+            TextButton(onPressed: null , child: Text('Retry')),
             TextButton(onPressed: null , child: Text('Main Menu')),
             TextButton(onPressed: _pushReview , child: Text('Review')),
           ],

@@ -1,106 +1,162 @@
 [
   {
-    "Question": "The slope of a vertical line is undefined.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Electrons are larger than molecules",
+    "Subject": "Science",
+    "Type": "Chemistry",
+    "True/False": false,
+    "Explanation": "Molecules are larger than electrons",
+    "Latex": "n"
+  },
+  {
+    "Question": "The Atlantic Ocean is the biggest ocean on Earth",
+    "Subject": "Science",
+    "Type": "Geology",
+    "True/False": false,
+    "Explanation": "The Pacific Ocean is the largest ocean in the world",
+    "Latex": "n"
+  },
+  {
+    "Question": "The chemical make up food often changes when you cook it",
+    "Subject": "Science",
+    "Type": "Nutrition",
     "True/False": true,
-    "Explanation": "Let (2 , 5) and (2 , 7) being two points on the same vertical line since their x coordinates are both equal to 2. Let us find the slope through the two points.\nm = (7 - 5) / (2 - 2) = 2 / 0 = undefined.\nThe statement \"the slope of a vertical line is undefined\" is TRUE.",
+    "Explanation": "Yes, heat causes chemical reactions hence cooking leads to changes",
     "Latex": "n"
   },
   {
-    "Question": "Two lines with positive slopes can be perpendicular.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Sharks are mammals",
+    "Subject": "Science",
+    "Type": "Agriculture",
     "True/False": false,
-    "Explanation": "For two lines to be perpendicular, the product of their slopes must be equal to - 1. If the two slopes are positive their product cannot be negative. Hence the statement \"Two lines with positive slopes can be perpendicular\" is FALSEFor two lines to be perpendicular, the product of their slopes must be equal to - 1. If the two slopes are positive their product cannot be negative. Hence the statement \"Two lines with positive slopes can be perpendicular\" is FALSE",
+    "Explanation": "Sharks are fish",
     "Latex": "n"
   },
   {
-    "Question": "5 > 10 or 5 < 7",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "The human body has four lungs",
+    "Subject": "Science",
+    "Type": "Anatomy",
+    "True/False": false,
+    "Explanation": "Humans have 2 lungs",
+    "Latex": "n"
+  },
+  {
+    "Question": "Atoms are most stable when their outer shells are full",
+    "Subject": "Science",
+    "Type": "Chemistry",
     "True/False": true,
-    "Explanation": "The statement \"5 > 10\" is false and the statement \"5 < 7\" is true. The whole statement \"5 > 10 or 5 < 7\" is TRUE since there is an \"or\" and one of the two statements is TRUE.",
+    "Explanation": "TRUE",
     "Latex": "n"
   },
   {
-    "Question": "The set of ordered pairs {(6,4),(2,-5),(-2,4),(6,-4)} is a function",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "For the first coordinate 6 there are two possible second coordinates: 4 and - 4 and therefore the statement \"the set of ordered pairs {(6,4),(2,-5),(-2,4),(6,-4)} is a function\" is FALSE.",
-    "Latex": "n"
-  },
-  {
-    "Question": "The additive inverse of -10 is 10.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Filtration separates mixtures based upon their particle size",
+    "Subject": "Science",
+    "Type": "Chemistry",
     "True/False": true,
-    "Explanation": "The additive inverse of a number x is.\n- x\nThe additive inverse of - 10 is.\n- (-10) = 10\nThe statement \"the additive inverse of -10 is 10\" is TRUE.",
+    "Explanation": "TRUE",
     "Latex": "n"
   },
   {
-    "Question": "The product of two positive numbers is NOT positive.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Venus is the closest planet to the Sun",
+    "Subject": "Science",
+    "Type": "Physics",
     "True/False": false,
-    "Explanation": "The product of two positive numbers is positive and The statement \"the product of two positive numbers is NOT positive\" is FALSE.",
+    "Explanation": "Mercury is the closest planet to the sun",
     "Latex": "n"
   },
   {
-    "Question": "x + 2 = 7 is called an inequality",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "x + 2 = 7 has an equal sign and is called an equation. Hence the statement \"x + 2 = 7 is called an inequality\" is FALSE.",
-    "Latex": "n"
-  },
-  {
-    "Question": "The associative property is used to write 4x + 8y = 4(x + 2y).",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "No. The distributive property is used to write\n4x + 8y = 4(x + 2y)\nThe statement \"the associative property is used to write 4x + 8y = 4(x + 2y)\" is FALSE",
-    "Latex": "n"
-  },
-  {
-    "Question": "The absolute value of a real negative number is negative.",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "The absolute value of a real negative number is positive",
-    "Latex": "n"
-  },
-  {
-    "Question": "30% of x is equal to 0.03x",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Conductors have low resistance",
+    "Subject": "Science",
+    "Type": "Physics",
     "True/False": true,
-    "Explanation": "30% of x is written as\n30% × x = (30/100) x = 0.03 x",
+    "Explanation": "TRUE- Conductors have very high resistance",
     "Latex": "n"
   },
   {
-    "Question": "x is at most equal to 9\" is written mathematically as x < 9.",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "No. It is written as\nx ≤ 9",
-    "Latex": "n"
-  },
-  {
-    "Question": "1000/0 = 0",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "Undefined; division by zero not allowed in mathematics",
-    "Latex": "n"
-  },
-  {
-    "Question": "0/1000 = 0",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Molecules can have atoms from more than one chemical element",
+    "Subject": "Science",
+    "Type": "Chemistry",
     "True/False": true,
-    "Explanation": "Zero divided by any non zero number gives zero",
+    "Explanation": "TRUE - Yes! Water is a perfect example of this (H20)",
+    "Latex": "y"
+  },
+  {
+    "Question": "Water is an example of a chemical element",
+    "Subject": "Science",
+    "Type": "Chemistry",
+    "True/False": false,
+    "Explanation": "FALSE",
+    "Latex": "n"
+  },
+  {
+    "Question": "The study of plants is known as botany",
+    "Subject": "Science",
+    "Type": "Agriculture",
+    "True/False": true,
+    "Explanation": "TRUE",
+    "Latex": "n"
+  },
+  {
+    "Question": "Mount Kilimanjaro is the tallest mountain in the world",
+    "Subject": "Science",
+    "Type": "Geology",
+    "True/False": false,
+    "Explanation": "Mount Everest is the tallest mountain in the world",
+    "Latex": "n"
+  },
+  {
+    "Question": "Floatation separates mixtures based on density",
+    "Subject": "Science",
+    "Type": "Physics",
+    "True/False": true,
+    "Explanation": "TRUE",
+    "Latex": "n"
+  },
+  {
+    "Question": "Herbivores eat meat",
+    "Subject": "Science",
+    "Type": "Agriculture",
+    "True/False": false,
+    "Explanation": "FALSE",
+    "Latex": "n"
+  },
+  {
+    "Question": "Atomic bombs work by atomic fission",
+    "Subject": "Science",
+    "Type": "Physics",
+    "True/False": true,
+    "Explanation": "TRUE",
+    "Latex": "n"
+  },
+  {
+    "Question": "Molecules are chemically bonded",
+    "Subject": "Science",
+    "Type": "Chemistry",
+    "True/False": true,
+    "Explanation": "TRUE",
+    "Latex": "n"
+  },
+  {
+    "Question": "Spiders have six legs",
+    "Subject": "Science",
+    "Type": "Chemistry",
+    "True/False": false,
+    "Explanation": "Spiders have 8 legs",
+    "Latex": "n"
+  },
+  {
+    "Question": "Kelvin is a measure of temperature",
+    "Subject": "Science",
+    "Type": "Physics",
+    "True/False": true,
+    "Explanation": "TRUE",
+    "Latex": "n"
+  },
+  {
+    "Question": "The human skeleton is made up of less than 100 bones",
+    "Subject": "Science",
+    "Type": "Anatomy",
+    "True/False": false,
+    "Explanation": "The human skeleton is made up of less than 206 bones",
     "Latex": "n"
   }
 ]
