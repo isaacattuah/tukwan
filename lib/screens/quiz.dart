@@ -3,7 +3,7 @@ import '../models/quiz_brain.dart';
 
 QuizBrain quizBrain = QuizBrain();
 
-void main() => runApp(Quiz());
+//void main() => runApp(Quiz());
 
 
 class Quiz extends StatelessWidget {
@@ -44,7 +44,7 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   Future<void> getQuestionFinal() async {
-    quizBrain.questionBank = await quizBrain.getQuestions();
+    quizBrain.questionBank = await quizBrain.getQuestions('nsmq');
     setState(() {
       _isLoading = false;
     });
@@ -52,8 +52,17 @@ class _QuizPageState extends State<QuizPage> {
 
 // Restart Quiz
   void restart(){
-    // runApp(Quiz());
-    //TODO : Implement method to restart application
+    Widget build(BuildContext context) {
+      final receivedCourseName =
+      ModalRoute.of(context)!.settings.arguments as String;
+      return Scaffold(
+          appBar: AppBar(
+            title: Text("$receivedCourseName Quiz"),
+          ),
+          body: Quiz()
+
+      );
+    }
   }
 
 // Enables reviews to be redone
@@ -71,7 +80,7 @@ class _QuizPageState extends State<QuizPage> {
           content: Text('You are done reviewing'),
           actions: [
             TextButton(onPressed: restart , child: Text('Retry')),
-            TextButton(onPressed: null , child: Text('Main Menu')),
+            // TextButton(onPressed: null , child: Text('Main Menu')),
             TextButton(onPressed: rewind , child: Text('Review Again')),
           ],
         );

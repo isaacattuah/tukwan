@@ -119,8 +119,8 @@ class QuizBrain {
 
 
 
-  Future<List<Question>> getQuestions() async {
-      var response = await rootBundle.loadString('assets/nsmq.json');
+  Future<List<Question>> getQuestions(String file) async {
+      var response = await rootBundle.loadString('assets/$file.json');
       final data = await jsonDecode(response);
 
      List _questionList = [];

@@ -1,5 +1,6 @@
-//CourseInfo.dart
+
 import 'package:flutter/material.dart';
+import 'package:tukwan/screens/quiz.dart';
 class CourseInfoPage extends StatelessWidget {
   static const String routeName = "/courseinfopage";
   const CourseInfoPage({Key? key}) : super(key: key);
@@ -9,12 +10,10 @@ class CourseInfoPage extends StatelessWidget {
     ModalRoute.of(context)!.settings.arguments as String;
     return Scaffold(
         appBar: AppBar(
-          title: Text("Course Info Page"),
+          title: Text("$receivedCourseName Quiz"),
         ),
-        body: SafeArea(
-          child: Container(
-            child: Text("Course Info Page $receivedCourseName"),
-          ),
-        ));
+        body: Quiz()
+
+    );
   }
 }
