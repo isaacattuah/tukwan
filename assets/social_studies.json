@@ -1,106 +1,42 @@
 [
   {
-    "Question": "The slope of a vertical line is undefined.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Soninke was one of the first people to have political power in Ghana",
+    "Subject": "Social Studies",
+    "Type": "African History",
     "True/False": true,
-    "Explanation": "Let (2 , 5) and (2 , 7) being two points on the same vertical line since their x coordinates are both equal to 2. Let us find the slope through the two points.\nm = (7 - 5) / (2 - 2) = 2 / 0 = undefined.\nThe statement \"the slope of a vertical line is undefined\" is TRUE.",
+    "Explanation": "Soninke was one of the first dominant tribes of Ghana",
     "Latex": "n"
   },
   {
-    "Question": "Two lines with positive slopes can be perpendicular.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "The capital city of Ghana is Luanda",
+    "Subject": "Social Studies",
+    "Type": "Geography",
     "True/False": false,
-    "Explanation": "For two lines to be perpendicular, the product of their slopes must be equal to - 1. If the two slopes are positive their product cannot be negative. Hence the statement \"Two lines with positive slopes can be perpendicular\" is FALSEFor two lines to be perpendicular, the product of their slopes must be equal to - 1. If the two slopes are positive their product cannot be negative. Hence the statement \"Two lines with positive slopes can be perpendicular\" is FALSE",
+    "Explanation": "The capital city of Ghana is Accra",
     "Latex": "n"
   },
   {
-    "Question": "5 > 10 or 5 < 7",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Africa has 54 countries",
+    "Subject": "Social Studies",
+    "Type": "Geography",
     "True/False": true,
-    "Explanation": "The statement \"5 > 10\" is false and the statement \"5 < 7\" is true. The whole statement \"5 > 10 or 5 < 7\" is TRUE since there is an \"or\" and one of the two statements is TRUE.",
+    "Explanation": "There are 54 countries in Africa",
     "Latex": "n"
   },
   {
-    "Question": "The set of ordered pairs {(6,4),(2,-5),(-2,4),(6,-4)} is a function",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "Kwame Nkrumah served as the president of Nigeria in 1967",
+    "Subject": "Social Studies",
+    "Type": "Politics",
     "True/False": false,
-    "Explanation": "For the first coordinate 6 there are two possible second coordinates: 4 and - 4 and therefore the statement \"the set of ordered pairs {(6,4),(2,-5),(-2,4),(6,-4)} is a function\" is FALSE.",
+    "Explanation": "Kwame Nkrumah was the president of Ghana and he served from 1957 to 1960",
     "Latex": "n"
   },
   {
-    "Question": "The additive inverse of -10 is 10.",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": true,
-    "Explanation": "The additive inverse of a number x is.\n- x\nThe additive inverse of - 10 is.\n- (-10) = 10\nThe statement \"the additive inverse of -10 is 10\" is TRUE.",
-    "Latex": "n"
-  },
-  {
-    "Question": "The product of two positive numbers is NOT positive.",
-    "Subject": "Math",
-    "Type": "Algebra",
+    "Question": "What happens to a dream deferred was a quote by Jerry John Rawlings",
+    "Subject": "Social Studies",
+    "Type": "Speeches",
     "True/False": false,
-    "Explanation": "The product of two positive numbers is positive and The statement \"the product of two positive numbers is NOT positive\" is FALSE.",
-    "Latex": "n"
-  },
-  {
-    "Question": "x + 2 = 7 is called an inequality",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "x + 2 = 7 has an equal sign and is called an equation. Hence the statement \"x + 2 = 7 is called an inequality\" is FALSE.",
-    "Latex": "n"
-  },
-  {
-    "Question": "The associative property is used to write 4x + 8y = 4(x + 2y).",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "No. The distributive property is used to write\n4x + 8y = 4(x + 2y)\nThe statement \"the associative property is used to write 4x + 8y = 4(x + 2y)\" is FALSE",
-    "Latex": "n"
-  },
-  {
-    "Question": "The absolute value of a real negative number is negative.",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "The absolute value of a real negative number is positive",
-    "Latex": "n"
-  },
-  {
-    "Question": "30% of x is equal to 0.03x",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": true,
-    "Explanation": "30% of x is written as\n30% × x = (30/100) x = 0.03 x",
-    "Latex": "n"
-  },
-  {
-    "Question": "x is at most equal to 9\" is written mathematically as x < 9.",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "No. It is written as\nx ≤ 9",
-    "Latex": "n"
-  },
-  {
-    "Question": "1000/0 = 0",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": false,
-    "Explanation": "Undefined; division by zero not allowed in mathematics",
-    "Latex": "n"
-  },
-  {
-    "Question": "0/1000 = 0",
-    "Subject": "Math",
-    "Type": "Algebra",
-    "True/False": true,
-    "Explanation": "Zero divided by any non zero number gives zero",
+    "Explanation": "This is an American quote by Langston Hughes",
     "Latex": "n"
   }
 ]

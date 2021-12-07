@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import '../models/quiz_brain.dart';
 import 'courses_info.dart';
@@ -56,6 +58,13 @@ class _QuizPageState extends State<QuizPage> {
     else if (CourseInfoPage.subject == "Science"){
       subject = 'science';
     }
+    else if(CourseInfoPage.subject == "Social Studies"){
+      subject = 'social_studies';
+    }
+    else{
+      var list = ['math','science','social_studies'];
+      subject = list[Random().nextInt(list.length)];
+    }
 
 
     quizBrain.questionBank = await quizBrain.getQuestions(subject);
@@ -66,17 +75,7 @@ class _QuizPageState extends State<QuizPage> {
 
 // Restart Quiz
   void restart(){
-    Widget build(BuildContext context) {
-      final receivedCourseName =
-      ModalRoute.of(context)!.settings.arguments as String;
-      return Scaffold(
-          appBar: AppBar(
-            title: Text("$receivedCourseName Quiz"),
-          ),
-          body: Quiz()
 
-      );
-    }
   }
 
 // Enables reviews to be redone
@@ -86,6 +85,7 @@ class _QuizPageState extends State<QuizPage> {
   }
 
 // Checks reviews left in array
+
   void reviewCheck(){
     setState(() {
       if (quizBrain.isFinishedReview() == true){
@@ -93,7 +93,7 @@ class _QuizPageState extends State<QuizPage> {
           title: Text('Completed!'),
           content: Text('You are done reviewing'),
           actions: [
-            TextButton(onPressed: restart , child: Text('Retry')),
+            // TextButton(onPressed: restart , child: Text('Retry')),
             // TextButton(onPressed: null , child: Text('Main Menu')),
             TextButton(onPressed: rewind , child: Text('Review Again')),
           ],
@@ -130,8 +130,8 @@ class _QuizPageState extends State<QuizPage> {
           title: Text('Completed!'),
           content: Text('You are done with this quiz. You scored ${score_str}/${total}'),
           actions: [
-            TextButton(onPressed: null , child: Text('Retry')),
-            TextButton(onPressed: null , child: Text('Main Menu')),
+            // TextButton(onPressed: restart , child: Text('Retry')),
+            // TextButton(onPressed: null , child: Text('Main Menu')),
             TextButton(onPressed: _pushReview , child: Text('Review')),
           ],
         );

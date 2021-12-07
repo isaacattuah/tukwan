@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'screens/login_page.dart';
 import 'screens/courses_info.dart';
+import 'screens/quiz.dart';
 
 void main(){
   //WidgetsFlutterBinding.ensureInitialized();
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
       home: LoginPage(),
       routes: {
         '/courseinfopage': (context) => CourseInfoPage(),
+        '/quizpage' : (context) => Quiz(),
       }
     );
   }
